@@ -7,7 +7,7 @@ require 'vendor/autoload.php';
 $app = new \Slim\App;
 $app->get('/', function (Request $request, Response $response, array $args) {
     //$name = $args['name'];
-    $response->getBody()->write("Hi avinash kumar. I am feeling great");
+    $response->getBody()->write("avinash kumar. I am feeling great");
 
     return $response;
 });
