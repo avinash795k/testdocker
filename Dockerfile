@@ -7,8 +7,8 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 	
 COPY ./composer.json /var/www/html/
 
+COPY ./index.php /var/www/html/
+
 RUN apt-get update && apt-get install -y git
 
 RUN composer install
-
-RUN git clone https://github.com/avinash795k/testdocker.git
