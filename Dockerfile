@@ -12,6 +12,3 @@ RUN apt-get update && apt-get install -y git
 RUN composer install
 
 RUN git clone https://github.com/avinash795k/testdocker.git
-
-CMD ["cp","testdocker/index.php","./"]
-	
